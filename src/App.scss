@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  position: relative;
+  border: 1px solid #000;
+  width: 250px;
+  padding: 10px;
+  box-shadow: 0 0 10px 1px #000;
+  border-radius: 20px;
+  margin: 10px;
+
+  .close {
+    background: #ccc;
+    padding: 3px 8px;
+    text-align: center;
+    font-size: 18px;
+    right: 5px;
+    top: 5px;
+    border-radius: 50%;
+    transition: 0.2s linear;
+    position: absolute;
+
+    &:hover {
+      cursor: pointer;
+      background: red;
+    }
+  }
+
+  .img {
+    width: 200px;
+    height: 170px;
+    border-radius: 25px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 25px;
+    }
+  }
+
+  .title {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .date {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .like {
+      .likeSvg:hover {
+        cursor: pointer;
+      }
+
+      .likeSvg {
+        path.active {
+          fill: red;
+        }
+      }
+    }
+  }
+}
